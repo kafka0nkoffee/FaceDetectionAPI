@@ -1,0 +1,19 @@
+//planning the structure of the API:
+
+/*
+
+/ --> a root route that for now will res.send that it's working
+
+/signin --> a POST request carrying some JSON data and will respond with either success or fail
+
+/register --> a POST request that will respond with a newly created user so we know that everything is working
+
+/profile/:userId --> a GET request, an optional parameter of 'userId' so that each user has their own homescreen.
+
+/image --> PUT request to update the ranking variable on the server, will return updated user object or some counter variable
+
+note: even though signin isn't creating anything new we still send the data via a POST request because we don't want credentials to be sent as query strings as they constitute sensitive data. so they will be sent over HTTPS to avoid the man-in-the-middle problem.
+
+this structure might change as we go through the project
+
+*/

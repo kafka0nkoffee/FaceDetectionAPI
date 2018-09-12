@@ -1,0 +1,40 @@
+// app.get('/profile/:id', (req,res) => {
+// 	const { id } = req.params;
+// 	let found = false;
+// 	database.users.forEach(user => {
+// 		 IMPORTANT!! 
+// 		if we use a simple if-else construct like the one below we will eventually get an error saying "can't set headers after they are sent" if the request's id say matches that of an user other than user[0]. This will happen because of the simplicity of this if-else. We need to put in a return and use a flag instead of the 'else' to see if the system went through all the users and still failed to find a match. 
+
+// 		/* 
+// 		if (user.id === id){
+// 		 	res.json(user);
+// 		} else {
+// 			res.status(404).json('No such user...');
+// 		} 
+// 		*/
+// 		if(user.id === id) {
+// 			found = true;
+// 			return res.json(user);
+// 		}
+// 	})
+// 	if (!found) {
+// 		res.status(400).json('No such user...');
+// 	}
+// });
+
+------------------xx-------------------------------
+
+app.get('/profile/:id', (req,res) => {
+// 	const { id } = req.params;
+// 	db.select('*').from('users').where({id: id})
+// 		.then(user => {
+// 			if(user.length){
+// 				res.json(user);	
+// 			}else {
+// 				res.status(400).json('no such user found');
+// 			}
+			
+// 		})
+// 		.catch(err => res.status(400).json('no such user found')); 
+// 		if we put a catch out here like this, even if there is no user found, the status returned will be 200 because boolean value of an empty array is true. therefore we need to do a check on the array length instead. 
+// });
