@@ -2,7 +2,7 @@
 
 This is the Node JS + Express JS based backend for the Face Detection app available at the following URL: xxx
 
-List of libraries can be observed in the package.json
+List of libraries/packages utilized for the backend can be observed in the package.json
 
 In order to run this project (remember the front-end resides in the repo: xxx)
 
