@@ -1,10 +1,10 @@
 # FaceDetectionAPI
 
-This is the Node JS + Express JS based backend for the Face Detection app available at the following URL: xxx
+This is the Node JS + Express JS based backend for the Face Detection app available at the following URL: https://face-detection-frontend.herokuapp.com/
 
 List of libraries/packages utilized for the backend can be observed in the package.json
 
-In order to run this project (remember the front-end resides in the repo: xxx)
+In order to run this project (remember the front-end resides in the repo: https://github.com/kikku2506/FaceDetection-frontend)
 
 1. Clone this repo
 2. Run npm install
